@@ -538,6 +538,7 @@ CONFIG_KERNEL_PRINTK_TIME=y
 # CONFIG_KERNEL_KEYS is not set
 # CONFIG_KERNEL_CGROUPS is not set
 # CONFIG_KERNEL_NAMESPACES is not set
+CONFIG_KERNEL_NAMESPACES=y
 # CONFIG_KERNEL_LXC_MISC is not set
 # CONFIG_KERNEL_SECCOMP_FILTER is not set
 # CONFIG_KERNEL_SECCOMP is not set
@@ -2938,8 +2939,8 @@ CONFIG_PACKAGE_kmod-nls-utf8=y
 #
 # Netfilter Extensions
 #
-# CONFIG_PACKAGE_kmod-arptables is not set
-# CONFIG_PACKAGE_kmod-ebtables is not set
+CONFIG_PACKAGE_kmod-arptables=y
+CONFIG_PACKAGE_kmod-ebtables=y
 CONFIG_PACKAGE_kmod-ip6tables=y
 # CONFIG_PACKAGE_kmod-ip6tables-extra is not set
 # CONFIG_PACKAGE_kmod-ipt-account is not set
@@ -3127,8 +3128,8 @@ CONFIG_PACKAGE_kmod-slhc=y
 CONFIG_PACKAGE_kmod-tun=y
 CONFIG_PACKAGE_kmod-udptunnel4=y
 CONFIG_PACKAGE_kmod-udptunnel6=y
-# CONFIG_PACKAGE_kmod-veth is not set
-# CONFIG_PACKAGE_kmod-vxlan is not set
+CONFIG_PACKAGE_kmod-veth=y
+CONFIG_PACKAGE_kmod-vxlan=y
 # CONFIG_PACKAGE_kmod-wireguard is not set
 
 #
@@ -4245,9 +4246,9 @@ CONFIG_PACKAGE_luci-app-mwan3=y
 # CONFIG_PACKAGE_luci-app-olsr-viz is not set
 # CONFIG_PACKAGE_luci-app-openvpn is not set
 CONFIG_PACKAGE_luci-app-openvpn-server=y
-# CONFIG_PACKAGE_luci-app-p910nd is not set
+CONFIG_PACKAGE_luci-app-p910nd=y
 # CONFIG_PACKAGE_luci-app-polipo is not set
-CONFIG_PACKAGE_luci-app-pptp-server=y
+#CONFIG_PACKAGE_luci-app-pptp-server=y
 # CONFIG_PACKAGE_luci-app-privoxy is not set
 # CONFIG_PACKAGE_luci-app-qos is not set
 # CONFIG_PACKAGE_luci-app-radicale is not set
@@ -4291,7 +4292,7 @@ CONFIG_PACKAGE_luci-theme-argon=y
 # CONFIG_PACKAGE_luci-theme-bootstrap is not set
 # CONFIG_PACKAGE_luci-theme-darkmatter is not set
 # CONFIG_PACKAGE_luci-theme-freifunk-generic is not set
-CONFIG_PACKAGE_luci-theme-material=y
+#CONFIG_PACKAGE_luci-theme-material=y
 # CONFIG_PACKAGE_luci-theme-openwrt is not set
 
 #
@@ -4579,11 +4580,11 @@ CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
 #
 # Select postfix build options
 #
-CONFIG_POSTFIX_TLS=y
-CONFIG_POSTFIX_SASL=y
-CONFIG_POSTFIX_LDAP=y
+#CONFIG_POSTFIX_TLS=y
+#CONFIG_POSTFIX_SASL=y
+#CONFIG_POSTFIX_LDAP=y
 # CONFIG_POSTFIX_DB is not set
-CONFIG_POSTFIX_CDB=y
+#CONFIG_POSTFIX_CDB=y
 # CONFIG_POSTFIX_EAI is not set
 # CONFIG_PACKAGE_ssmtp is not set
 
@@ -4632,10 +4633,10 @@ CONFIG_POSTFIX_CDB=y
 # CONFIG_PACKAGE_rtorrent is not set
 # CONFIG_PACKAGE_rtorrent-rpc is not set
 # CONFIG_PACKAGE_transmission-cli is not set
-CONFIG_PACKAGE_transmission-daemon=y
+# CONFIG_PACKAGE_transmission-daemon=y
 # CONFIG_PACKAGE_transmission-remote is not set
 # CONFIG_PACKAGE_transmission-web is not set
-CONFIG_PACKAGE_transmission-web-control=y
+# CONFIG_PACKAGE_transmission-web-control=y
 
 #
 # Captive Portals
@@ -4649,7 +4650,7 @@ CONFIG_PACKAGE_transmission-web-control=y
 #
 # Download Manager
 #
-CONFIG_PACKAGE_ariang=y
+# CONFIG_PACKAGE_ariang=y
 # CONFIG_PACKAGE_ariang-nginx is not set
 # CONFIG_PACKAGE_webui-aria2 is not set
 # CONFIG_PACKAGE_yaaw is not set
@@ -4657,23 +4658,23 @@ CONFIG_PACKAGE_ariang=y
 #
 # File Transfer
 #
-CONFIG_PACKAGE_aria2=y
+# CONFIG_PACKAGE_aria2=y
 
 #
 # Aria2 Configuration
 #
-CONFIG_ARIA2_OPENSSL=y
+# CONFIG_ARIA2_OPENSSL=y
 # CONFIG_ARIA2_GNUTLS is not set
 # CONFIG_ARIA2_NOSSL is not set
 # CONFIG_ARIA2_LIBXML2 is not set
-CONFIG_ARIA2_EXPAT=y
+#CONFIG_ARIA2_EXPAT=y
 # CONFIG_ARIA2_NOXML is not set
-CONFIG_ARIA2_BITTORRENT=y
-CONFIG_ARIA2_METALINK=y
-CONFIG_ARIA2_SFTP=y
+#CONFIG_ARIA2_BITTORRENT=y
+#CONFIG_ARIA2_METALINK=y
+#CONFIG_ARIA2_SFTP=y
 # CONFIG_ARIA2_ASYNC_DNS is not set
 # CONFIG_ARIA2_COOKIE is not set
-CONFIG_ARIA2_WEBSOCKET=y
+#CONFIG_ARIA2_WEBSOCKET=y
 # CONFIG_PACKAGE_atftp is not set
 # CONFIG_PACKAGE_atftpd is not set
 # CONFIG_PACKAGE_curl is not set
@@ -4682,10 +4683,10 @@ CONFIG_ARIA2_WEBSOCKET=y
 # CONFIG_PACKAGE_rsync is not set
 # CONFIG_PACKAGE_rsyncd is not set
 # CONFIG_PACKAGE_vsftpd is not set
-CONFIG_PACKAGE_vsftpd-alt=y
-CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
+# CONFIG_PACKAGE_vsftpd-alt=y
+# CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
 # CONFIG_PACKAGE_vsftpd-tls is not set
-CONFIG_PACKAGE_wget=y
+# CONFIG_PACKAGE_wget=y
 # CONFIG_PACKAGE_wget-nossl is not set
 
 #
@@ -4702,10 +4703,10 @@ CONFIG_PACKAGE_wget=y
 #
 # Firewall
 #
-# CONFIG_PACKAGE_arptables is not set
+CONFIG_PACKAGE_arptables=y
 # CONFIG_PACKAGE_conntrack is not set
 # CONFIG_PACKAGE_conntrackd is not set
-# CONFIG_PACKAGE_ebtables is not set
+CONFIG_PACKAGE_ebtables=y
 # CONFIG_PACKAGE_fwknop is not set
 # CONFIG_PACKAGE_fwknopd is not set
 CONFIG_PACKAGE_ip6tables=y
@@ -5099,7 +5100,7 @@ CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH=y
 CONFIG_OPENVPN_openssl_ENABLE_PF=y
 # CONFIG_OPENVPN_openssl_ENABLE_IPROUTE2 is not set
 CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
-CONFIG_PACKAGE_pptpd=y
+# CONFIG_PACKAGE_pptpd=y
 # CONFIG_PACKAGE_softethervpn is not set
 # CONFIG_PACKAGE_sstp-client is not set
 # CONFIG_PACKAGE_strongswan is not set
@@ -5192,7 +5193,7 @@ CONFIG_PACKAGE_pptpd=y
 # CONFIG_PACKAGE_vpnc-scripts is not set
 # CONFIG_PACKAGE_wireguard is not set
 # CONFIG_PACKAGE_wireguard-tools is not set
-CONFIG_PACKAGE_xl2tpd=y
+# CONFIG_PACKAGE_xl2tpd=y
 # CONFIG_PACKAGE_zerotier is not set
 
 #
@@ -5464,7 +5465,7 @@ CONFIG_PACKAGE_smartdns=y
 # CONFIG_PACKAGE_stunnel is not set
 # CONFIG_PACKAGE_tayga is not set
 # CONFIG_PACKAGE_tcpdump is not set
-# CONFIG_PACKAGE_tcpdump-mini is not set
+CONFIG_PACKAGE_tcpdump-mini=y
 # CONFIG_PACKAGE_tor is not set
 # CONFIG_PACKAGE_tor-gencert is not set
 # CONFIG_PACKAGE_tor-geoip is not set
@@ -5986,7 +5987,7 @@ CONFIG_PACKAGE_shellsync=y
 # CONFIG_PACKAGE_udns-ex-rdns is not set
 # CONFIG_PACKAGE_udns-rblcheck is not set
 # CONFIG_PACKAGE_ugps is not set
-# CONFIG_PACKAGE_usb-modeswitch is not set
+CONFIG_PACKAGE_usb-modeswitch=y
 # CONFIG_PACKAGE_usbmuxd is not set
 # CONFIG_PACKAGE_usbreset is not set
 # CONFIG_PACKAGE_usbutils is not set
